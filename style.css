@@ -106,3 +106,7 @@ footer.foot a{color:var(--mute)}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 @media print{header#top,nav#side,aside#toc,.tf{display:none}.wrap{display:block}body{background:#fff;color:#000}}
+
+.join{margin:1.4em 0}
+.join-btn{display:inline-block;padding:.6em 1.2em;border:1px solid var(--gold);border-radius:6px;background:var(--hl);color:var(--gold);font-weight:600;text-decoration:none}
+.join-btn:hover{background:var(--gold);color:var(--bg)}
