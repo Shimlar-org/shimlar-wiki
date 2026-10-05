@@ -110,3 +110,4 @@ footer.foot a{color:var(--mute)}
 .join{margin:1.4em 0}
 .join-btn{display:inline-block;padding:.6em 1.2em;border:1px solid var(--gold);border-radius:6px;background:var(--hl);color:var(--gold);font-weight:600;text-decoration:none}
 .join-btn:hover{background:var(--gold);color:var(--bg)}
+nav#side .lastupd{padding:8px 8px 0 26px;font-size:.8rem;color:var(--mute)}
