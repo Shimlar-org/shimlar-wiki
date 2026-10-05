@@ -5,6 +5,13 @@
  var LAST_UPDATED='Oct 5, 2026';
  var bs=$('header#top .brand small');if(bs)bs.appendChild(document.createTextNode(' \u00b7 Last updated '+LAST_UPDATED));
  var cd=$$('nav#side details'); cd=cd[cd.length-1];if(cd){var lu=document.createElement('div');lu.className='lastupd';lu.textContent='Last updated '+LAST_UPDATED;cd.parentNode.insertBefore(lu,cd.nextSibling)}
+ /* page filters: <input data-filter="selector"> hides elements whose data-q text does not contain the query */
+ $$('input[data-filter]').forEach(function(inp){inp.addEventListener('input',function(){
+   var q=inp.value.trim().toLowerCase(),shown=0,tot=0;
+   $$(inp.getAttribute('data-filter')).forEach(function(el){tot++;var hit=!q||(el.getAttribute('data-q')||'').indexOf(q)>-1;el.style.display=hit?'':'none';if(hit)shown++});
+   $$('.zband').forEach(function(b){var any=$$('.zblk',b).some(function(z){return z.style.display!=='none'});b.style.display=any?'':'none'});
+   var n=$('#zfn');if(n&&inp.id==='zf')n.textContent=q?shown+' of '+tot+' zones':'';
+ })});
  /* theme */
  var root=document.documentElement;
  try{var t=localStorage.getItem('theme');if(t)root.setAttribute('data-theme',t)}catch(e){}

@@ -111,3 +111,6 @@ footer.foot a{color:var(--mute)}
 .join-btn{display:inline-block;padding:.6em 1.2em;border:1px solid var(--gold);border-radius:6px;background:var(--hl);color:var(--gold);font-weight:600;text-decoration:none}
 .join-btn:hover{background:var(--gold);color:var(--bg)}
 nav#side .lastupd{padding:8px 8px 0 26px;font-size:.8rem;color:var(--mute)}
+.content h4{margin:1.6em 0 .4em;font:600 1.05rem var(--serif);color:var(--gold)}
+.content h4 small{font:400 .8rem var(--sans);color:var(--mute);margin-left:.4em}
+.zblk table{margin-bottom:.5em}
