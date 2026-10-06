@@ -2,7 +2,7 @@
 (function(){
  var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
  /* last updated: change this one date when the wiki is updated */
- var LAST_UPDATED='Oct 5, 2026, 20:05 UTC';
+ var LAST_UPDATED='Oct 6, 2026, 17:16 UTC';
  var bs=$('header#top .brand small');if(bs)bs.appendChild(document.createTextNode(' \u00b7 Last updated '+LAST_UPDATED));
  var cd=$$('nav#side details'); cd=cd[cd.length-1];if(cd){var lu=document.createElement('div');lu.className='lastupd';lu.textContent='Last updated '+LAST_UPDATED;cd.parentNode.insertBefore(lu,cd.nextSibling)}
  /* page filters: <input data-filter="selector"> hides elements whose data-q text does not contain the query */

@@ -1,0 +1,125 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Gem Drop Calculator | Shimlar Wiki</title><meta name="description" content="These tools turn the rules in Gem Drop Algorithm into numbers. Every figure is a plain chance per gem drop, worked out from the percentages on that page."><meta name="theme-color" content="#341a18"><meta property="og:type" content="website"><meta property="og:site_name" content="Shimlar Wiki"><meta property="og:title" content="Gem Drop Calculator | Shimlar Wiki"><meta property="og:description" content="These tools turn the rules in Gem Drop Algorithm into numbers. Every figure is a plain chance per gem drop, worked out from the percentages on that page."><meta property="og:image" content="https://shimlar-org.github.io/shimlar-wiki/social-preview.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23341a18'/%3E%3Cpath d='M16 4l10 4v8c0 6-4 10-10 12C10 26 6 22 6 16V8z' fill='none' stroke='%23d9a441' stroke-width='2'/%3E%3Cpath d='M20 12.5c-1-1.2-2.5-1.8-4-1.8-2 0-3.6 1-3.6 2.7 0 3.6 7.8 1.8 7.8 5.4 0 1.8-1.7 2.9-4.2 2.9-1.7 0-3.2-.6-4.2-1.8' fill='none' stroke='%23d9a441' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E"><link rel="stylesheet" href="style.css"></head><body><header id="top"><button id="menu" aria-label="Toggle page list">&#9776;</button><a class="brand" href="index.html">Shimlar Wiki<small>player reference</small></a><div id="sbox"><input id="q" type="search" placeholder="Search the wiki" autocomplete="off" aria-label="Search the wiki"><div id="res"></div></div><button id="theme" aria-label="Switch light or dark theme" title="Switch theme"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="7" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 2a7 7 0 0 1 0 14z" fill="currentColor"/></svg></button></header><div class="wrap"><nav id="side" aria-label="Pages">
+<details><summary>Getting started</summary>
+<a href="basics.html">Game Basics and Hotbar Guide</a>
+<a href="character-creation.html">Character Creation</a>
+<a href="races.html">Races</a>
+<a href="class-types.html">Class Types</a>
+<a href="game-modes.html">Game Modes</a>
+<a href="commands.html">Commands</a>
+<a href="terminology.html">Terminology</a>
+<a href="rules.html">Rules</a>
+<a href="roleplay-rules.html">Roleplay Rules</a>
+</details>
+<details><summary>Gear and items</summary>
+<a href="accessories.html">Accessories</a>
+<a href="accessory-zir.html">Accessory Enchanting (Zir)</a>
+<a href="gems.html">Gems</a>
+<a href="gem-forge.html">Gem Forge</a>
+<a href="emblems.html">Emblems</a>
+<a href="shadows.html">Shadows</a>
+<a href="purses.html">Purses</a>
+<a href="fusion-machine.html">Fusion Machine</a>
+<a href="rock-polish-machine.html">Rock Polish Machine</a>
+</details>
+<details><summary>Progression</summary>
+<a href="masteries.html">Masteries</a>
+<a href="professions.html">Professions</a>
+<a href="quests.html">Quests</a>
+<a href="alignment.html">Alignment</a>
+<a href="titles.html">Titles</a>
+<a href="estate.html">Estate</a>
+<a href="resources.html">Resources</a>
+<a href="renown.html">Renown</a>
+<a href="wedding.html">Wedding</a>
+</details>
+<details><summary>World and monsters</summary>
+<a href="zones.html">Zones</a>
+<a href="outworld-map.html">Outworld Map</a>
+<a href="monster-stats.html">Monster Stats</a>
+<a href="special-monsters.html">Special Monsters</a>
+<a href="conquests.html">Conquests</a>
+<a href="interactions.html">Interactions</a>
+<a href="player-killing.html">Player Killing</a>
+</details>
+<details><summary>Clans</summary>
+<a href="clans.html">Clans</a>
+<a href="clan-kingdom.html">Clan Kingdom</a>
+<a href="clan-power.html">Clan Power</a>
+</details>
+<details><summary>Bonuses and events</summary>
+<a href="daily-bonus.html">Daily Bonus</a>
+<a href="personal-bonus-time.html">Personal Bonus Time (PBT)</a>
+<a href="reset-schedule.html">Reset Schedule</a>
+<a href="random-events.html">Random Events</a>
+<a href="jackpot.html">Jackpot</a>
+<a href="leaderboards.html">Leaderboards</a>
+<a href="game-updates.html">Game Updates</a>
+</details>
+<details open><summary>Tools</summary>
+<a href="zone-finder.html">Zone Finder</a>
+<a href="gem-calculator.html" class="cur" aria-current="page">Gem Drop Calculator</a>
+</details>
+<details><summary>Community</summary>
+<a href="suggestions.html">Suggestions</a>
+<a href="discord.html">Discord</a>
+</details>
+</nav><main><div class="crumbs"><a href="index.html">Home</a> / Tools</div><h1>Gem Drop Calculator</h1><div class="content">
+<p>These tools turn the rules in <a href="gems.html#gem-drop-algorithm">Gem Drop Algorithm</a> into numbers. Every figure is a plain chance per gem drop, worked out from the percentages on that page.</p>
+<h2 id="chance-calculator">How many drops will it take?</h2>
+<p>Pick a pool, then see how likely it is to appear in a number of drops, and how many drops it usually takes.</p>
+<form class="tool" onsubmit="return false"><div class="tgrid">
+<label>Pool or drop<select id="gp">
+<option value="0.40">Pool 1 (rolls 1 to 40): 40%</option>
+<option value="0.25">Pool 2 (rolls 41 to 65): 25%</option>
+<option value="0.20">Pool 3 (rolls 66 to 85): 20%</option>
+<option value="0.10">Pool 4 (rolls 86 to 95): 10%</option>
+<option value="0.04">Pool 5 (rolls 96 to 99): 4%</option>
+<option value="0.01">Rare pool (roll of 100): 1%</option>
+<option value="0.003">Any Tear roll (rare pool, then 1 to 3 on the second roll): 0.3%</option>
+<option value="0.002625" selected>Dragon Tear or Demon Tear: 0.2625%</option>
+<option value="0.000375">Moonfang from the Tear roll: 0.0375%</option>
+<option value="0.007">Pebble from the rare pool: 0.7%</option>
+</select></label>
+<label>Number of drops<input id="gn" inputmode="numeric" value="100"></label>
+</div></form>
+<div id="gout" class="tout"></div>
+<table id="gtab"><thead><tr><th>Chance of at least one</th><th>Drops needed</th></tr></thead><tbody></tbody></table>
+<h2 id="how-the-odds-work">How the odds work</h2>
+<ul><li>A random number from 1 to 100 picks the pool: 1 to 40 is 40%, 41 to 65 is 25%, 66 to 85 is 20%, 86 to 95 is 10%, 96 to 99 is 4%, and 100 is 1%.</li>
+<li>Only the roll of 100 reaches Dragon Tear, Demon Tear and Pebble. A second roll from 1 to 10 then decides: 1 to 3 (30%) gives a Tear, and 4 to 10 (70%) gives a Pebble.</li>
+<li>The guide says a Tear has a 12.5% chance of being a Moonfang instead. This calculator applies that 12.5% to the 30% Tear roll, and treats Dragon Tear and Demon Tear together because the guide does not say how they are split.</li>
+<li>For the pools of 40%, 25%, 20%, 10% and 4%, the calculator gives the chance of that whole pool, not one named gem, because the guide does not say how gems inside a pool are weighted. Vampire bonuses and class gem conversion are not included.</li></ul>
+<h2 id="grade-chances">Gem grade chances</h2>
+<p>Every gem starts at the lowest grade the zone drops. For each extra grade the zone allows, there is a 33% chance to move up one grade. Enter the lowest and highest grade the zone drops.</p>
+<form class="tool" onsubmit="return false"><div class="tgrid">
+<label>Lowest grade<input id="ga" inputmode="numeric" value="2"></label>
+<label>Highest grade<input id="gb" inputmode="numeric" value="7"></label>
+</div></form>
+<p id="gnote" class="lastupd" style="padding:0;font-size:.9rem"></p>
+<table id="gradet"><thead><tr><th>Grade</th><th>Chance</th></tr></thead><tbody></tbody></table>
+<p>Dragon Tear and Demon Tear always come in the highest grade the zone allows.</p></div><footer class="foot">Figures compiled from the game's zone pages at <a href="https://shimlar.org/maps/">shimlar.org/maps</a> and the guide's gem drop rules. Values can change when the game is updated. Unofficial fan reference, not affiliated with Shimlar Ltd.</footer></main><aside id="toc" aria-label="On this page"></aside></div><script>var BASE="";</script><script src="search-index.js"></script><script src="site.js"></script><script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+function pct(x){if(x>=0.9995)return '100%';if(x<0.00005&&x>0)return '<0.01%';var s=(x*100).toFixed(x<0.01?3:x<0.1?2:1);return s.replace(/\.?0+$/,'')+'%'}
+function f(n){return n.toLocaleString('en-US')}
+function calc(){
+ var p=parseFloat($('gp').value),raw=$('gn').value.replace(/[^0-9]/g,''),n=raw?parseInt(raw,10):0;
+ var at=1-Math.pow(1-p,n);
+ $('gout').innerHTML=n?'Chance of at least one in <b>'+f(n)+'</b> drops: <b>'+pct(at)+'</b>. On average, about 1 in <b>'+f(Math.round(1/p))+'</b> drops.':'Enter a number of drops.';
+ var tb=$('gtab').tBodies[0];tb.innerHTML='';
+ [0.5,0.75,0.9,0.95,0.99].forEach(function(c){var d=Math.ceil(Math.log(1-c)/Math.log(1-p));var tr=document.createElement('tr');tr.innerHTML='<td>'+Math.round(c*100)+'%</td><td>'+f(d)+'</td>';tb.appendChild(tr)});
+}
+function C(n,k){var r=1;for(var i=1;i<=k;i++)r=r*(n-k+i)/i;return r}
+function grade(){
+ var a=parseInt($('ga').value.replace(/[^0-9]/g,''),10),b=parseInt($('gb').value.replace(/[^0-9]/g,''),10);
+ var tb=$('gradet').tBodies[0];tb.innerHTML='';var note=$('gnote');
+ if(!(a>=1&&b>=a&&b<=40)){note.textContent='Enter whole grades with the highest at least the lowest.';return}
+ var k=b-a,exp=0;
+ for(var j=0;j<=k;j++){var p=C(k,j)*Math.pow(0.33,j)*Math.pow(0.67,k-j);exp+=p*(a+j);var tr=document.createElement('tr');tr.innerHTML='<td>Grade '+(a+j)+'</td><td>'+pct(p)+'</td>';tb.appendChild(tr)}
+ note.textContent=k?('The zone allows '+k+' upgrade roll'+(k>1?'s':'')+'. Average grade: '+exp.toFixed(2)+'.'):'With no extra grades allowed, every gem is Grade '+a+'.';
+}
+['gp','gn'].forEach(function(i){$(i).addEventListener('input',calc)});
+['ga','gb'].forEach(function(i){$(i).addEventListener('input',grade)});
+calc();grade();
+})();
+</script></body></html>

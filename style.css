@@ -114,3 +114,10 @@ nav#side .lastupd{padding:8px 8px 0 26px;font-size:.8rem;color:var(--mute)}
 .content h4{margin:1.6em 0 .4em;font:600 1.05rem var(--serif);color:var(--gold)}
 .content h4 small{font:400 .8rem var(--sans);color:var(--mute);margin-left:.4em}
 .zblk table{margin-bottom:.5em}
+.tool{margin:1em 0}
+.tgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:12px 16px;align-items:end}
+.tool label{display:flex;flex-direction:column;gap:4px;font-size:.9rem;color:var(--mute)}
+.tool input,.tool select{padding:.5em .6em;font:inherit;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:6px}
+.tool label.chk{flex-direction:row;align-items:center;gap:8px}
+.tool label.chk input{width:auto}
+.tout{margin:1em 0;padding:.8em 1em;border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:6px;background:var(--hl)}
