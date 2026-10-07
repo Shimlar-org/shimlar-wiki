@@ -121,3 +121,5 @@ nav#side .lastupd{padding:8px 8px 0 26px;font-size:.8rem;color:var(--mute)}
 .tool label.chk{flex-direction:row;align-items:center;gap:8px}
 .tool label.chk input{width:auto}
 .tout{margin:1em 0;padding:.8em 1em;border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:6px;background:var(--hl)}
+
+.rmx th,.rmx td{padding:6px 5px;text-align:center}.rmx th:nth-child(2),.rmx td:nth-child(2){text-align:left}.rmx th{font-size:.85em}
